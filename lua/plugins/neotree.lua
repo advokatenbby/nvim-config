@@ -8,5 +8,6 @@ return {
     }, 
     config = function()
         vim.keymap.set('n', '<leader>p', ':Neotree toggle<CR>', { noremap = true, silent = true})
+        vim.keymap.set('n', '<leader>gs', ':Neotree float git_status<CR>', { noremap = true, silent = true})
     end
 }
