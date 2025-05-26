@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "ts_ls", "rust_analyzer", "volar" }
+                ensure_installed = { "lua_ls", "ts_ls", "rust_analyzer", "vuels" }
             })
         end
     },
@@ -28,7 +28,7 @@ return {
             lspconfig.rust_analyzer.setup({
                 capabilities = capabilities
             })
-            lspconfig.volar.setup({
+            lspconfig.vuels.setup({
                 capabilities = capabilities
             })
 
@@ -37,12 +37,12 @@ return {
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
             vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
         end
-    }, 
+    },
     {
-        "windwp/nvim-autopairs", 
+        "windwp/nvim-autopairs",
         config = function()
             require("nvim-autopairs").setup({
-                check_ts = true, 
+                check_ts = true,
                 disable_filetype = { "TelescopePromt", "vim" }
             })
         end
