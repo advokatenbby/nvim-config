@@ -9,6 +9,6 @@ vim.wo.number = true
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.o.background = "dark"
-vim.cmd("colorscheme onedark")
 
+
+-- TODO din mamma
